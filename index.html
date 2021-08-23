@@ -5,21 +5,93 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap" rel="stylesheet">
   <title>Frontend Mentor | Order summary card</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
+    .card {
+      width: 50%;
+      height: 50%;
+      border: 1px solid black;
+      margin: 0 auto;
+      background-color: #fff;
+      border-radius: 10px;
+    }
+    body{
+      background-image: url('/images/pattern-background-desktop.svg');
+      background-repeat: no-repeat;
+      font-family:  'Red Hat Display';
+      font-size: 16px;
+    }
+    h1{
+      font-size: 2em;
+      text-align: center;
+      color: hsl(223, 47%, 23%);
+      font-weight: 900;
+    }
+    button{
+      font-family: 'Red Hat Display';
+      font-size: 1.2em;
+      font-weight: 700;
+      color:#fff;
+      border: 1px solid hsl(228, 45%, 44%);
+      border-radius: 10px;
+    }
+    p{
+      font-size: 1em;
+      width: 80%;
+      font-weight: 500;
+      margin: 0 auto;
+    }
+    .card .card-body{
+      width: 80%;
+      margin:0 auto ;
+
+    }
+    .card .info-card{
+      width: 90%;
+      text-align: center;
+      background-color:  hsl(225, 100%, 98%);
+      height: 90px;
+      margin: 10px;
+      padding: 10px;
+
+    }
+   
+    .img-header-card{
+      width: 100%;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+    }
+    .info-text{
+      width: 33%;
+      display: inline;
+    }
+
+    .info-card a{
+      width: 33%;
+    }
+
+    .info-img{
+      width: 33%;
+    }
+
   </style>
 </head>
 <body>
 
-  <div>
-    <picture>
-      <img src="/images/illustration-hero.svg" alt="">
+  <div class="card">
+    <div class="card-header">
+    <picture >
+      <img src="/images/illustration-hero.svg" alt="image header" class="img-header-card">
     </picture>
+  </div>
+  <div class="card-body">
     <h1>Order Summary</h1> 
 
     <p>
@@ -27,15 +99,19 @@
     device anywhere you like!
     </p> 
   
-    <div>
-      Annual Plan
-      $59.99/year
+    <div class="info-card">
+      <picture class="info-img">
+        <img src="/images/icon-music.svg" alt="icon music">
+      </picture>
+      <div class="info-text">Annual Plan <br>
+        $59.99/year</div> 
       <a href="#">Change</a> 
     </div>
     
   
     <button>Proceed to Payment</button> 
     <a href="#">Cancel Order</a> 
+  </div>
   </div>
   
   
