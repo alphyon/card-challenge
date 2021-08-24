@@ -14,12 +14,13 @@
 
   <style>
     .container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      display: grid;
+     
     }
 
     .card {
+      position: relative;
+      top: 50px;
       width: 400px;
       border: 1px solid hsl(225, 100%, 98%);
       margin: 0 auto;
@@ -57,6 +58,9 @@
       height: 50px;
       box-shadow: 0px 25px 21px hsl(228deg 35% 80% / 53%);
 
+    }
+    button:hover{
+      background-color:hsl(242, 77%, 68%)
     }
 
     p {
@@ -108,6 +112,11 @@
       display: inline;
     }
 
+    .info-card a:hover{
+      color:hsl(242, 77%, 68%);
+      text-decoration: none;
+    }
+
     .info-img {
       margin: 10px 5px 0px 0px;
       width: 40px;
@@ -130,6 +139,9 @@
       color: hsl(224, 23%, 55%);
       font-weight: 900;
 
+    }
+    .footer-link a:hover {
+      color: hsl(223, 47%, 23%)
     }
     .item{
       display: inline-block;
