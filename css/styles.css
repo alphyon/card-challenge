@@ -1,6 +1,6 @@
 .container {
   display: grid;
-  height: 100vh;
+  height: 90vh;
   place-items: center;
 }
 .card {
