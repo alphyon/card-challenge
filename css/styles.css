@@ -135,7 +135,8 @@
     display: inline-block;
   }
 
-  h3 {
+  h2 {
+    font-size: 1.1em;
     color: hsl(223, 47%, 23%);
     font-weight: 900;
     margin: 5px;
